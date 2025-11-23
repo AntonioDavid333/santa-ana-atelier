@@ -1,0 +1,157 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+nav {
+	
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: larger;
+	width: 100%;
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #7c9cab;
+	align-items: center;
+	box-sizing: border-box;
+	/*posicion fija*/
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+nav:hover{
+	background-color: white;
+	color: #333a44;
+}
+
+#logo {
+	width: 200px;
+	display: flex;
+	align-items: center;
+}
+
+#logo img {
+	width: 100%; 
+}
+
+#options {
+	display: flex;
+	justify-content: center;
+	flex: 1; 
+	gap: 2em;
+}
+
+#options > p {
+	padding: 1em;
+	margin: 0;
+}
+
+#log {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+#log img {
+	width: 24px;
+	height: auto;
+}
+main{
+	width: 100%;
+}
+#banner{
+	width: 100%;
+}
+article img{
+	width: 100%;
+}
+
+section{
+	display: flex;
+	width: 100%;
+}
+#rosarios{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+article{
+    box-sizing: border-box;
+    padding: 1%;
+	width: 25%;
+	position: relative;
+    
+}
+article h1{
+	color: white;
+	position: absolute;
+	bottom: 10%;
+	left: 8%;
+	width: 30%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 5em;
+}
+footer{
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	background-color: #feecc3;
+}
+#información{
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 3%;
+	display: flex;
+	justify-content: space-around;
+}
+li{
+	margin: 1em;
+	list-style: none;
+}
+#marca{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#filters{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#filters p{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+#iconoFiltros{
+    height: 2em;
+    margin-right: 25%;
+}
+
+@media only screen and (max-width: 760px) {
+  #options {
+    display: none;
+  }
+  article h1{
+	font-size: 3em;
+  }
+  #información{
+	text-align: center;
+	margin:auto;
+	flex-direction: column;
+  }
+}

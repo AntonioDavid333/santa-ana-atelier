@@ -1,0 +1,196 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+/*BARRA DE NAVEGACIÓN :*/
+
+nav {
+	
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: larger;
+	width: 100%;
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #7c9cab;
+	align-items: center;
+	box-sizing: border-box;
+	/*posicion fija*/
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+nav:hover{
+	background-color: white;
+	color: #333a44;
+}
+
+#logo {
+	width: 200px;
+	display: flex;
+	align-items: center;
+}
+
+#logo img {
+	width: 100%; 
+}
+
+#options {
+	display: flex;
+	justify-content: center;
+	flex: 1; 
+	gap: 2em;
+}
+
+#options > p {
+	padding: 1em;
+	margin: 0;
+}
+
+#log {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+#log img {
+	width: 24px;
+	height: auto;
+}
+/*FIN BARRA DE NAVEGACIÓN*/
+/*________________________________________________________________________________*/
+#banner{
+	
+	width: 100%;
+	object-fit: cover;
+}
+/*ESTO ES PORQUE QUIERO QUE OCUPE MAS ALTURA LA PRIMERA SECCION DEL BANNER*/
+section:first-of-type{
+	height: 95vh;
+}
+/*UNA ALTURA DE SECCIONES DE MAS DE LA MITAD DE LA PAGINA ESTA BIEN COMO HE VISTO EN O
+OTRAS PAGINAS COMERCIALES*/
+section{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 100%;
+	height: 70vh;
+	
+}
+section a{
+	display:block;
+	width: 100%;
+	height: 100%;
+}
+
+article img{
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+article{
+	text-align: right;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+section img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+/* article  */h1{
+	color: white;
+	position: absolute;
+	bottom: 1%;
+	left: 8%;
+	width: 30%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 5em;
+	z-index: 0;
+}
+footer{
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	background-color: lightgrey;
+}
+#información{
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 3%;
+	display: flex;
+	justify-content: space-around;
+}
+li{
+	margin: 1em;
+	list-style: none;
+}
+#marca{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cortinilla1{
+	position: absolute;
+	opacity: 50%;
+	width: 100%;
+	height: 100%;
+	background-color: #333a44;
+	transition: transform ease-in-out 0.5s;
+	vertical-align: top;
+	z-index: 10;
+}
+article:hover .cortinilla1{
+	transform: translatey(-70%);
+}
+
+.cortinilla2h, .cortinilla3h,.cortinilla4h {
+    position: absolute;
+	background-color: #333a44;
+    overflow: hidden;
+	opacity: 60%;
+	width: 100%;
+	height: 100%;
+	transform: scale(1);
+	top: 0%;
+	left: 0px;
+	transition: width 0.5s ease-in-out;
+   
+}
+
+section:hover .cortinilla2h{
+	width: 20%;
+}
+section:hover .cortinilla3h{
+	width: 25%;
+}
+section:hover .cortinilla4h{
+	width: 30%;
+}
+
+
+@media only screen and (max-width: 760px) {
+  #options {
+    display: none;
+  }
+  /* article */ h1{
+	font-size: 3em;
+  }
+  #información{
+	text-align: center;
+	margin:auto;
+	flex-direction: column;
+  }
+}

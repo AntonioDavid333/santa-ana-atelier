@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    z-index: -10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%) grayscale(70%);
+}
+
+form{
+    
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 10;
+    width: 30vw;
+    height: 20vh;
+    box-sizing: border-box;
+    padding: 2em;
+}
+form input{
+
+}
+
+button{
+    background-color: green;
+}
