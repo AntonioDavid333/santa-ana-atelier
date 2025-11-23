@@ -28,6 +28,8 @@ body{
     justify-content: center;
     align-items: center;
     z-index: -10;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 /* img{
     z-index: -10;
@@ -49,6 +51,32 @@ body{
     left: 0;
     z-index: -5;
 }
+header{
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2em;
+    color: white;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+nav .enlaces a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 form{
     /* border: solid; */
@@ -62,7 +90,7 @@ form{
     /* background-color: white; */
     z-index: 10;
     width: 20vw;
-    height: 30vh;
+    height: 40vh;
     box-sizing: border-box;
     padding: 2em;
 }
@@ -98,6 +126,7 @@ form input{
 
 button{
     background-color: #7c9cab;
+    width: 100%;
     padding: 1em;
     padding-left: 2em;
     padding-right: 2em;
@@ -107,6 +136,19 @@ button{
     border: none;
     box-shadow: 2px 2px 5px #333a44 ;
     cursor: pointer;
+}
+
+.registro{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 0.5em;
+}
+.registro a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /*bolas rosario*/
