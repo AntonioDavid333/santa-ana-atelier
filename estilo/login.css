@@ -1,34 +1,291 @@
+/*
+PALETA DE CANVA VINTAGE VILLAGE:
+https://www.canva.com/colors/color-palettes/vintage-village/
+
+Charcoal
+#7c9cab
+
+Peach
+#e8cbb1
+
+Yellow
+#feecc3
+
+Black
+#333a44
+ */
+
 body{
-    margin: 0;
+     margin: 0;
     padding: 0;
-    width: 100vw;
     height: 100vh;
+    background-image: url("https://picsum.photos/1980/1000");
+    background-size: cover;
+    background-position: center;
+    /* filter: brightness(60%) grayscale(70%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
 }
-img{
+/* img{
     z-index: -10;
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(60%) grayscale(70%);
+} */
+
+.filtro-background{
+    /*No supe como resolver que el fondo tuviera un filtro y lo resolví con un div vacio*/
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333a44 ;
+    opacity: 80%;
+    top: 0;
+    left: 0;
+    z-index: -5;
 }
 
 form{
-    
-    margin-top: 40%;
+    /* border: solid; */
+    margin-top: 1em; 
     display: flex;
+    gap: 1em;
     flex-direction: column;
-    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: white; */
     z-index: 10;
-    width: 30vw;
-    height: 20vh;
+    width: 20vw;
+    height: 30vh;
     box-sizing: border-box;
     padding: 2em;
 }
 form input{
+    width: 100%;
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    text-align: center;
 
 }
+.contraseña-opciones{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: white;
+}
+.contraseña-opciones a{
+    color: white;
+    text-decoration: none;
+}
+
+#recordar-contenedor{
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
 
 button{
-    background-color: green;
+    background-color: #7c9cab;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: white;
+    /* width: 50%; */
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px #333a44 ;
+    cursor: pointer;
+}
+
+/*bolas rosario*/
+.rosario{
+    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: solid 2px #e8cbb1;
+    border-radius: 50%;
+    /* top: 10%;
+    left: 5%; */
+    animation: reza 2s infinite alternate;
+    margin-bottom: 2em;
+}
+/*9% es la mitad de una bola*/
+.bola{
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #7c9cab ;
+    border-radius: 50%;
+    
+}
+.bola1{
+    bottom: -5%;
+    left: 26%;
+    animation: rezar 3s ;
+    
+}
+.bola2{
+    bottom: 12%;
+    left: 0%;
+    animation: rezar 3s ;
+    animation-delay: 2s;
+    
+}
+.bola3{
+    top: 42%;
+    left: -9%;
+    animation: rezar 3s ;
+    animation-delay: 4s;
+    
+}
+.bola4{
+    top: 12%;
+    left: 0%;
+    animation: rezar 3s;
+    animation-delay: 6s;
+    
+}
+.bola5{
+    top: -5%;
+    left: 26%;
+    animation: rezar 3s;
+    animation-delay: 8s;
+}
+/*A partir de aqui, la otra mitad, jajaj me tengo que dividir así porque estoy poniendo las proporciones uno a uno
+a ojo y despues las copio a la otra mitad pero cambiando el top por el bottom y demás*/
+.bola6{
+    top: -5%;
+    right: 26%;
+    animation: rezar 3s;
+    animation-delay: 10s;
+}
+.bola7{
+    top: 12%;
+    right: 0%;
+    animation: rezar 3s ;
+    animation-delay: 12s;
+    
+}
+.bola8{
+    top: 42%;
+    right: -9%;
+    animation: rezar 3s;
+    animation-delay: 14s;
+    
+}
+.bola9{
+    bottom: 12%;
+    right: 0%;
+    animation: rezar 3s;
+    animation-delay: 16s;
+    
+}
+.bola10{
+    bottom: -5%;
+    right: 26%;
+    animation: rezar 3s;
+    animation-delay: 18s;
+}
+.cruz{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: -30%;
+    left: 35%;
+    
+}
+.barra-vertical{
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #7c9cab;
+    left: 20px;
+    top: 0;
+}
+.barra-horizontal{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #7c9cab;
+    top: 20px;
+    left: 0;
+}
+
+@keyframes rezar {
+    0% {
+        background-color: #e8cbb1;
+        box-shadow: 0 0 15px 8px rgba(255, 244, 214, 0.9);
+    }
+    100% {
+        background-color: #7c9cab ;
+        box-shadow: none;
+    }
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 420px) {
+    form{
+        width: 80vw;
+    }
+    .rosario{
+        width: 100px;
+        height: 100px;
+    }
+    .bola{
+        width: 15px;
+        height: 15px;
+    }
+    .cruz{
+        width: 30px;
+        height: 30px;
+    }
+    .barra-horizontal{
+        height: 10px;
+        top: 30%;
+    }
+    .barra-vertical{
+        width: 10px;
+        left: 36%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 421px) {
+    form{
+        width: 50vw;
+    }
+     .rosario{
+        width: 100px;
+        height: 100px;
+    }
+    .bola{
+        width: 15px;
+        height: 15px;
+    }
+    .cruz{
+        width: 30px;
+        height: 30px;
+    }
+    .barra-horizontal{
+        height: 10px;
+        top: 30%;
+    }
+    .barra-vertical{
+        width: 10px;
+        left: 34%;
+    }
 }

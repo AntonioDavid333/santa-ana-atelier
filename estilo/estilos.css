@@ -180,8 +180,9 @@ section:hover .cortinilla4h{
 	width: 30%;
 }
 
+/*MEDIA QUERIES*/
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 420px) {
   #options {
     display: none;
   }
