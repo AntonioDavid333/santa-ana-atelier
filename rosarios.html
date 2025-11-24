@@ -7,33 +7,38 @@
 	<link rel="stylesheet" href="estilo/rosarios.css">
 </head>
 <body>
-	<nav>
-		<div id="logo">
-			<img id="logotipo" src="imagenes/logo.png">
-		</div>
-		<div id="options">
-			<p>Nuevo</p>
-			<p>Rosarios</p>
-			<p>Pulseras</p>
-			<p>Escapularios</p>
-		</div>
-		<div id="log">
-			<img src="imagenes/buscar.png">
-			<img src="imagenes/contacto.png">
-			<img src="imagenes/perfil.png">
-		</div>
-	</nav>
+	<header>
+		<nav>
+			<div id="logo">
+				<img id="logotipo" src="imagenes/logo.png">
+			</div>
+			<div id="options">
+				<p>Nuevo</p>
+				<p>Rosarios</p>
+				<p>Pulseras</p>
+				<p>Escapularios</p>
+			</div>
+			<div id="log">
+				<img src="imagenes/buscar.png">
+				<img src="imagenes/contacto.png">
+				<img src="imagenes/perfil.png">
+			</div>
+		</nav>
+	</header>
 	<main>
-		<section>
+		<!-- <section>
 			<img id="banner" src="imagenes/BannerRosario.jpg">
-		</section>
-        <div id="filters">
-                <p>
-                    <img id="iconoFiltros" src="imagenes/filters.png">
-                    filtros
-                </p>
-                <p>Productos</p>
-            </div>
+		</section> -->
+        <div class="busqueda">
+			<p>Resultados</p>
+            
+			<div class="busqueda-input">
+				<input type="text" placeholder="Buscar...">
+				<img src="imagenes/buscar.png" class="icono">
+			</div>
+			
+                
+        </div>
 		<section id="rosarios">
 			<article>
 				<img src="imagenes/r1.png">
@@ -94,6 +99,22 @@
 			</article>
 		</section>
 	</main>
+	<aside>
+		<div class="titulo-filtros">
+            <img id="iconoFiltros" src="imagenes/filters.png">
+            Filtros
+        </div>
+		<div class="filtro-seccion">
+			<a>Madera</a>
+			<a>Metal</a>
+			<a>Plástico</a>
+			<a>Collares</a>
+			<a>Pulseras</a>
+			<a>Escapularios</a>
+			<a>Niño</a>
+			<a>Adulto</a>
+		</div>
+	</aside>
 	<footer>
 		<div id="información">
 			<div>
