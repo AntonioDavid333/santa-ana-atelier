@@ -90,60 +90,50 @@ main{
 	grid-area: main;
 }
 
-#banner{
-	
-	width: 100%;
-	object-fit: cover;
+.imagenes-producto{
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 40%;
+    float: left;
+    
+
 }
-/*ESTO ES PORQUE QUIERO QUE OCUPE MAS ALTURA LA PRIMERA SECCION DEL BANNER*/
-section:first-of-type{
-	height: 95vh;
+.img-producto{
+    border-radius: 5px;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
 }
-/*UNA ALTURA DE SECCIONES DE MAS DE LA MITAD DE LA PAGINA ESTA BIEN COMO HE VISTO EN O
-OTRAS PAGINAS COMERCIALES*/
-section{
-	position: relative;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	width: 100%;
-	height: 70vh;
-	
+.img-producto:hover{
+    z-index: 20;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px 1px grey;
+    cursor: pointer;
 }
-section a{
-	display:block;
-	width: 100%;
-	height: 100%;
+.carrusel{
+    width: 100%;
+    display: flex;
+}
+.carrusel img{
+    width: 25%;
+    object-fit: cover;
+}
+.carrusel img:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px 1px grey;
+    cursor: pointer;
 }
 
-article img{
-	width: 100%;
-	object-fit: cover;
-	height: 100%;
-}
-article{
-	text-align: right;
-	width: 100%;
-	height: 100%;
-	position: relative;
-	overflow: hidden;
+.detalles{
+    height: 50%;
+    border: #333a44 solid;
 }
 
-section img{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-}
-/* article  */h1{
-	color: white;
-	position: absolute;
-	bottom: 1%;
-	left: 8%;
-	width: 30%;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 5em;
-	z-index: 0;
-}
+/*FOOTER*/
+/*______________________________________________________________________*/
 footer{
 	grid-area: footer;
 	font-family: Arial, Helvetica, sans-serif;
@@ -167,62 +157,4 @@ li{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.cortinilla1{
-	position: absolute;
-	opacity: 50%;
-	width: 100%;
-	height: 100%;
-	background-color: #333a44;
-	transition: transform ease-in-out 0.5s;
-	vertical-align: top;
-	z-index: 10;
-}
-article:hover .cortinilla1{
-	transform: translatey(-70%);
-}
-
-.cortinilla2h, .cortinilla3h,.cortinilla4h {
-    position: absolute;
-	background-color: #333a44;
-    overflow: hidden;
-	opacity: 60%;
-	width: 100%;
-	height: 100%;
-	transform: scale(1);
-	top: 0%;
-	left: 0px;
-	transition: width 0.5s ease-in-out;
-   
-}
-
-section:hover .cortinilla2h{
-	width: 20%;
-}
-section:hover .cortinilla3h{
-	width: 25%;
-}
-section:hover .cortinilla4h{
-	width: 30%;
-}
-
-aside{
-	display: none;
-}
-
-/*MEDIA QUERIES*/
-
-@media only screen and (max-width: 420px) {
-  #options {
-    display: none;
-  }
-  /* article */ h1{
-	font-size: 3em;
-  }
-  #información{
-	text-align: center;
-	margin:auto;
-	flex-direction: column;
-  }
 }
