@@ -7,6 +7,7 @@ body{
 /*BARRA DE NAVEGACIÓN :*/
 
 nav {
+	/* grid-area: header; */
 	
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
@@ -25,8 +26,18 @@ nav {
 	top: 0;
 	z-index: 100;
 }
+
+nav a{
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 nav:hover{
 	background-color: white;
+	color: #333a44;
+}
+nav:hover a{
 	color: #333a44;
 }
 

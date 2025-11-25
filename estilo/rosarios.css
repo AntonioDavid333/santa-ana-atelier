@@ -13,6 +13,8 @@ body{
 	grid-template-rows: 150px auto auto;
 
 }
+/*BARRA DE NAVEGACIÓN*/
+/*_________________________________________________________________________________________*/
 header{
 	grid-area: header;
 	box-sizing: border-box;
@@ -42,10 +44,21 @@ nav {
 	top: 0;
 	z-index: 100;
 }
+
+nav a{
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 nav:hover{
 	background-color: white;
 	color: #333a44;
 }
+nav:hover a{
+	color: #333a44;
+}
+
 
 #logo {
 	width: 200px;
@@ -79,6 +92,9 @@ nav:hover{
 	width: 24px;
 	height: auto;
 }
+/*______________________________________________________________________________________________*/
+/*MAIN*/
+/*______________________________________________________________________________________________*/
 main{
 	box-sizing: border-box;
 	grid-area: main;
@@ -103,55 +119,9 @@ section{
 	display: flex;
 	width: 100%;
 }
-#rosarios{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 2%;
-    margin-right: 2%;
-    font-family: Arial, Helvetica, sans-serif;
 
-    
-}
-article{
-    box-sizing: border-box;
-    padding: 1%;
-	width: 25%;
-	position: relative;
-    
-}
-article h1{
-	color: white;
-	position: absolute;
-	bottom: 10%;
-	left: 8%;
-	width: 30%;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 5em;
-}
-footer{
-	grid-area: footer;
-	font-family: Arial, Helvetica, sans-serif;
-	display: flex;
-	flex-direction: column;
-	background-color: #feecc3;
-}
-#información{
-	padding-left: 20%;
-	padding-right: 20%;
-	padding-top: 3%;
-	display: flex;
-	justify-content: space-around;
-}
-li{
-	margin: 1em;
-	list-style: none;
-}
-#marca{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+/*BÚSQUEDA*/
+/*---------------------------------------------------------------*/
 .busqueda{
 	box-sizing: border-box;
 	display: flex;
@@ -185,6 +155,101 @@ li{
     height: 2em;
     margin: 0.5em;
 }
+
+/*LISTA DE ROSARIOS*/
+/*___________________________________________________________________________*/
+#rosarios{
+	box-sizing: border-box;
+    display: flex;
+	justify-content: space-around;
+    flex-wrap: wrap;
+	gap: 0.5em;
+	padding: 1em;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+#rosarios a {
+    display: block;
+    text-decoration: none; /* opcional */
+    color: inherit;        /* opcional */
+}
+
+/*ARTICULOS*/
+/*-----------------------------------------------------------------------------------*/
+article{
+	position: relative;
+    box-sizing: border-box;
+	width: 20%;
+	position: relative;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 2px 2px 5px 1px lightgray;
+	margin-bottom: 2em;
+    
+}
+article h1{
+	color: white;
+	position: absolute;
+	bottom: 10%;
+	left: 8%;
+	width: 30%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 5em;
+}
+article img{
+	object-fit: cover;
+	cursor: pointer;
+}
+
+article:hover{
+	transform: scale(1.05);
+}
+
+article a div{
+	padding-left: 2em;
+
+}
+.favorito{
+	z-index: 20;
+	width: 10%;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.favorito:active{
+	background-color: lightgreen;
+	border-radius: 50px;
+}
+
+/*______________________________________________________________________________*/
+footer{
+	grid-area: footer;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	background-color: lightgray;
+}
+#información{
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 3%;
+	display: flex;
+	justify-content: space-around;
+}
+li{
+	margin: 1em;
+	list-style: none;
+}
+#marca{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 /*ASIDE*/
 /*________________________________________________________________________*/
 aside{
@@ -217,10 +282,58 @@ aside a{
 	border-radius: 50px;
 	cursor: pointer;
 }
+/*FILTRO DE CANTIDAD DE DINERO*/
+/*----------------------------------------------------------------*/
+.cantidad{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 2em;
+}
+.cantidad input{
+	margin-top: 1em;
+	width: 100%;
+}
 
 
 @media only screen and (max-width: 760px) {
-  #options {
+  body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-areas: "header header header"
+	                     "main main main"
+	                     "footer footer footer";
+
+	grid-template-columns: 20% 1fr 1fr;
+	font-family: Arial, Helvetica, sans-serif;
+	grid-template-rows: 150px auto auto;
+
+}
+.busqueda-input{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+article{
+	position: relative;
+    box-sizing: border-box;
+	width: 30%;
+	position: relative;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 2px 2px 5px 1px lightgray;
+	margin-bottom: 2em;
+    
+}
+	
+	aside{
+	display: none;
+  }
+	
+	#options {
     display: none;
   }
   article h1{
