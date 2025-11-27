@@ -8,7 +8,7 @@ body{
 	                     "main main main"
 	                     "footer footer footer";
 
-	grid-template-columns: 20% 1fr 1fr;
+	grid-template-columns: 50% 1fr 1fr;
 	font-family: Arial, Helvetica, sans-serif;
 	grid-template-rows: 150px auto auto;
 
@@ -91,22 +91,21 @@ main{
 }
 
 .imagenes-producto{
-    box-sizing: border-box;
     padding: 1em;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 40%;
-    float: left;
-    
+    width: 60%;
+}
 
-}
 .img-producto{
-    border-radius: 5px;
-    height: 80%;
+	flex: 8;  
     width: 100%;
+	/*IMPORTANTE PARA QUE NO OCUPEN DEMASIADA ALTURA*/
+    max-height: 50vh; 
     object-fit: cover;
+    border-radius: 5px;
 }
+
 .img-producto:hover{
     z-index: 20;
     transform: scale(1.05);
@@ -114,6 +113,8 @@ main{
     cursor: pointer;
 }
 .carrusel{
+	/* height: 20%; */
+	
     width: 100%;
     display: flex;
 }
@@ -128,9 +129,194 @@ main{
 }
 
 .detalles{
-    height: 50%;
-    border: #333a44 solid;
+    /* height: 40%; */
+    border-bottom: #333a44 solid 2px;
+	display: flex;
+	font-size: 1em;
 }
+
+/*----------------------------------------------------------------------------*/
+.producto{
+	flex-grow: 1;
+	padding-left: 5em;
+	padding-right: 5em;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.producto div:first-of-type{
+	font-size: 2em;
+	flex-shrink: 1;
+}
+.producto a{
+	color: gray;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.producto div:nth-of-type(2){
+	flex-grow: 2;
+	vertical-align: top;
+}
+.botones{
+	flex-grow: 1;
+	width: 100%;
+	margin-top: auto;
+	/* margin-top: 3em; */
+	/* margin-bottom: 6em; */
+	display: flex;
+	gap: 0.5em;
+	flex-direction: column;
+	
+}
+.cesta{
+	height: 5em;
+	background-color: #333a44;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.comprar{
+	height: 5em;
+	cursor: pointer;
+	background-color: rgb(15, 139, 67);
+	border: none;
+	color: white;
+	border-radius: 5px;
+}
+.botones button{
+	padding: 1em;
+	font-size: 1em;
+}
+
+.producto button:hover{
+	background-color: gray;
+	transform: scale(1.05);
+	box-shadow: 2px 2px 5px 1px #333a44;
+}
+
+.puntuacion img{
+	width: 30px;
+	height: 30px;
+}
+.puntuacion{
+	display: flex;
+	
+	align-items: center;
+}
+.nota{
+	/* font-weight: bold; */
+	font-size: 0.6em;
+	color: #7c9cab;
+	margin-left: 0.5em;
+}
+/*-------------------------------------------------------------------------------*/
+/*OPINIONES*/
+
+.puntuacion-global{
+	padding: 1em;
+}
+
+.opiniones{
+	padding: 2em;
+}
+.opinion{
+	margin-bottom: 2em;
+	margin: auto;
+	width: 80%;
+	padding: 1em;
+	border-top: solid lightgray 1px;
+}
+.global{
+	display: flex;
+	align-items: center;
+}
+.global img{
+	width: 40px;
+}
+.global span{
+	font-size: 3em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	color: #333a44;
+}
+
+.escribir-opinion {
+    margin: 3em auto;
+    width: 100%;
+    max-width: 900px;
+
+    background: lightgray;
+    padding: 2em;
+    border-radius: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+	border: gray 1px solid;
+}
+
+
+.escribir-opinion label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.escribir-opinion .campo-opinion {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+	
+}
+
+
+.escribir-opinion textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 1em;
+    font-size: 1em;
+
+    border: 1px solid gray;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+
+.escribir-opinion .puntuacion {
+    display: flex;
+    justify-content: center;
+    gap: 0.3em;
+}
+
+.escribir-opinion .puntuacion img {
+    width: 30px;
+}
+
+.escribir-opinion button {
+    align-self: center;
+    padding: 0.8em 2em;
+    font-size: 1em;
+
+    background-color: #333a44;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.escribir-opinion button:hover {
+    background-color: gray;
+	transform: scale(1.05);
+	box-shadow: 2px 2px 5px 1px #333a44;
+}
+
+
+
+
+
 
 /*FOOTER*/
 /*______________________________________________________________________*/
@@ -157,4 +343,202 @@ li{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+/*_______________________________________________________________________________________*/
+/*MEDIA QUERIES*/
+/*MOVIL*/
+@media only screen and (max-width: 420px) {
+    body {
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+		margin: 0;
+		/* padding: 0; */
+    }
+
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-around;
+        height: 80px;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    #options {
+        display: none;
+    }
+
+    #log {
+        gap: 0.5em;
+    }
+
+    .detalles {
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .imagenes-producto {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .img-producto {
+        max-height: 30vh;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .carrusel {
+        overflow-x: auto;
+        width: 100%;
+        gap: 0.3em;
+        padding: 0.5em 0;
+        justify-content: flex-start;
+    }
+
+    .carrusel img {
+        width: 40%;
+        min-width: 100px;
+    }
+
+    .producto {
+        width: 100%;
+        padding: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .producto div:nth-of-type(2){
+        text-align: left;
+        padding: 0 5%;
+        width: 100%;
+    }
+
+    .botones {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .botones button {
+        width: 100%;
+        height: 4em;
+    }
+
+    .opiniones {
+        padding: 1em;
+    }
+    
+    .opinion {
+        width: 95%;
+        padding: 0.5em;
+    }
+
+    .escribir-opinion {
+        width: 95%;
+        margin: 1em auto;
+        padding: 1em;
+    }
+
+    .escribir-opinion textarea {
+        min-height: 100px;
+    }
+
+    .escribir-opinion button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 1em 0;
+    }
+
+    #información {
+        padding: 0 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #información > div {
+        margin-bottom: 1em;
+    }
+    
+    #información li {
+        margin: 0.5em 0;
+    }
+
+    #marca {
+        padding: 0 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #marca h1, #marca p {
+        margin: 0.2em 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 421px) {
+    .detalles {
+        flex-direction: column;
+        padding: 1.5em;
+    }
+
+    .imagenes-producto {
+        width: 90%;
+        padding: 0.5em;
+    }
+
+    .img-producto {
+        max-height: 40vh;
+    }
+
+    .carrusel {
+        overflow-x: auto;
+        gap: 0.5em;
+    }
+
+    .carrusel img {
+        width: 30%;
+        min-width: 120px;
+    }
+
+    .producto {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .botones button {
+        width: 100%;
+        height: 4.5em;
+    }
+
+    .opinion {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .escribir-opinion {
+        width: 90%;
+        margin: 2em auto;
+        padding: 1.5em;
+    }
+
+    .escribir-opinion textarea {
+        min-height: 120px;
+    }
+
+    .escribir-opinion button {
+        width: 80%;
+    }
 }
