@@ -8,18 +8,39 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="enlaces">
-                <a href="index.html">Inicio</a>
-            </div>
-        </nav>
-    </header>
+		<nav>
+			<div id="logo">
+				<a href="index.html"><img id="logotipo" src="imagenes/logo.png"></a>
+			</div>
+			<div id="options">
+				<!-- <a href="index.html">Inicio</a> -->
+				<a>Nuevo</a>
+				<a>Rosarios</a>
+				<a>Pulseras</a>
+				<a>Escapularios</a>
+			</div>
+			<div id="log">
+				<img src="imagenes/buscar.png">
+				<a href="contacto.html"><img src="imagenes/contacto.png"></a>
+				<a href="login.html"><img src="imagenes/perfil.png"></a>
+			</div>
+		</nav>
+	</header>
 
     <main>
         <form>
             <h2>Contáctanos</h2>
             <input type="text" placeholder="Nombre completo" required>
             <input type="email" placeholder="Correo electrónico" required>
+            <input type="tel" placeholder="Número de teléfono">
+            <input type="text" placeholder="Asunto">
+            <select required>
+                <option value="" disabled selected>Motivo del contacto</option>
+                <option>Información de productos</option>
+                <option>Pedido personalizado</option>
+                <option>Soporte con una compra</option>
+                <option>Colaboraciones</option>
+            </select>
             <textarea placeholder="Escribe tu mensaje..." required></textarea>
             
             <button type="submit">Enviar mensaje</button>
@@ -35,5 +56,51 @@
     </main>
     
     <div class="filtro-background"></div>
+
+    <footer>
+		<div id="información">
+			<div>
+				<h3>Ayuda</h3>
+				<ul>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Contacto</h3>
+				<ul>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Sobre nosotros</h3>
+				<ul>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Redes sociales</h3>
+				<ul>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li>Lorem ipsum dolor sit amet consectetur</li>
+				</ul>
+			</div>
+		</div>
+		<div id="marca">
+			<h1>Santa Ana Atelier</h1>
+			<p>Marca registrada</p>
+		</div>
+		
+	</footer>
 </body>
 </html>

@@ -66,8 +66,12 @@ nav:hover a{
 	align-items: center;
 }
 
-#logo img {
+#logotipo {
 	width: 100%; 
+    filter: drop-shadow(8px 8px 10px #333a44) drop-shadow(-8px -8px 10px #333a44);
+}
+nav:hover #logotipo{
+    filter: none;
 }
 
 #options {
@@ -320,7 +324,7 @@ aside a{
 article{
 	position: relative;
     box-sizing: border-box;
-	width: 30%;
+	width: 40%;
 	position: relative;
 	border-radius: 15px;
 	overflow: hidden;

@@ -58,8 +58,12 @@ nav:hover a{
 	align-items: center;
 }
 
-#logo img {
+#logotipo {
 	width: 100%; 
+    filter: drop-shadow(8px 8px 10px #333a44) drop-shadow(-8px -8px 10px #333a44);
+}
+nav:hover #logotipo{
+    filter: none;
 }
 
 #options {
