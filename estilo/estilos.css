@@ -1,3 +1,7 @@
+/*CHARCOAL AAA: #425A67
+*/
+
+
 body{
 	margin: 0px;
 	padding: 0px;
@@ -29,7 +33,7 @@ nav {
 	justify-content: space-between;
 	padding-left: 2%;
 	padding-right: 2%;
-	background-color: #7c9cab;
+	background-color: #425A67;
 	align-items: center;
 	box-sizing: border-box;
 	/*posicion fija*/

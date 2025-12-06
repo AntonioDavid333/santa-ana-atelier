@@ -36,10 +36,9 @@ nav {
 	justify-content: space-between;
 	padding-left: 2%;
 	padding-right: 2%;
-	background-color: #7c9cab;
+	background-color: #425A67;
 	align-items: center;
 	box-sizing: border-box;
-	/*posicion fija*/
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -177,8 +176,8 @@ section{
 
 #rosarios a {
     display: block;
-    text-decoration: none; /* opcional */
-    color: inherit;        /* opcional */
+    text-decoration: none; 
+    color: inherit;       
 }
 
 /*ARTICULOS*/

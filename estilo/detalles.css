@@ -29,10 +29,10 @@ nav {
 	justify-content: space-between;
 	padding-left: 2%;
 	padding-right: 2%;
-	background-color: #7c9cab;
+	background-color: #425A67;
 	align-items: center;
 	box-sizing: border-box;
-	/*posicion fija*/
+	
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -184,7 +184,7 @@ main{
 .comprar{
 	height: 5em;
 	cursor: pointer;
-	background-color: rgb(15, 139, 67);
+	background-color: #0B6531;
 	border: none;
 	color: white;
 	border-radius: 5px;
