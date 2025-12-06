@@ -266,6 +266,9 @@ a ojo y despues las copio a la otra mitad pero cambiando el top por el bottom y 
     top: 20px;
     left: 0;
 }
+label{
+    color: white;
+}
 
 @keyframes rezar {
     0% {

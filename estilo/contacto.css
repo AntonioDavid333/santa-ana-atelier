@@ -160,6 +160,9 @@ form textarea {
 form input {
     height: 2.5em;
 }
+label{
+    color: white;
+}
 
 form textarea {
     height: 100px;
