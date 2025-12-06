@@ -8,91 +8,100 @@
 </head>
 <body>
     <header>
-		<nav>
+		<nav aria-label="Navegación principal">
 			<div id="logo">
-				<a href="index.html"><img id="logotipo" src="imagenes/logo.png"></a>
+				<a href="index.html" aria-label="Ir a la página de inicio" accesskey="i" tabindex="1">
+                    <img id="logotipo" src="imagenes/logo.png" alt="Logotipo de Santa Ana Atelier">
+                </a>
 			</div>
-			<div id="options">
-				<!-- <a href="index.html">Inicio</a> -->
-				<a>Nuevo</a>
-				<a>Rosarios</a>
-				<a>Pulseras</a>
-				<a>Escapularios</a>
+			<div id="options" aria-label="Categorías de productos">
+				<a tabindex="2" aria-label="Ver novedades">Nuevo</a>
+				<a tabindex="3" aria-label="Ver rosarios">Rosarios</a>
+				<a tabindex="4" aria-label="Ver pulseras">Pulseras</a>
+				<a tabindex="5" aria-label="Ver escapularios">Escapularios</a>
 			</div>
-			<div id="log">
-				<img src="imagenes/buscar.png">
-				<a href="contacto.html"><img src="imagenes/contacto.png"></a>
-				<a href="login.html"><img src="imagenes/perfil.png"></a>
+			<div id="log" aria-label="Opciones de usuario">
+				<img src="imagenes/buscar.png" alt="Buscar" aria-label="Buscar en la página" tabindex="6">
+				<a href="contacto.html" aria-label="Ir a contacto" accesskey="c" tabindex="7">
+                    <img src="imagenes/contacto.png" alt="Icono de contacto">
+                </a>
+				<a href="login.html" aria-label="Ir al inicio de sesión" accesskey="l" tabindex="8">
+                    <img src="imagenes/perfil.png" alt="Icono de perfil de usuario">
+                </a>
 			</div>
 		</nav>
 	</header>
 
     <main>
-        <form>
+        <form aria-label="Formulario de contacto">
             <h2>Contáctanos</h2>
-            <input type="text" placeholder="Nombre completo" required>
-            <input type="email" placeholder="Correo electrónico" required>
-            <input type="tel" placeholder="Número de teléfono">
-            <input type="text" placeholder="Asunto">
-            <select required>
+            <input type="text" placeholder="Nombre completo" required aria-label="Nombre completo" tabindex="9">
+            <input type="email" placeholder="Correo electrónico" required aria-label="Correo electrónico" tabindex="10">
+            <input type="tel" placeholder="Número de teléfono" aria-label="Número de teléfono" tabindex="11">
+            <input type="text" placeholder="Asunto" aria-label="Asunto" tabindex="12">
+            <select required aria-label="Motivo del contacto" tabindex="13">
                 <option value="" disabled selected>Motivo del contacto</option>
                 <option>Información de productos</option>
                 <option>Pedido personalizado</option>
                 <option>Soporte con una compra</option>
                 <option>Colaboraciones</option>
             </select>
-            <textarea placeholder="Escribe tu mensaje..." required></textarea>
+            <textarea placeholder="Escribe tu mensaje..." required aria-label="Mensaje" tabindex="14"></textarea>
             
-            <button type="submit">Enviar mensaje</button>
+            <button type="submit" aria-label="Enviar mensaje de contacto" accesskey="e" tabindex="15">Enviar mensaje</button>
             
             <div class="info-adicional">
                 <p>O encuéntranos en nuestras redes sociales.</p>
-                <div class="redes">
-                    <a><img class="red" src="imagenes/instagram.png"></a>
-                    <a><img class="red" src="imagenes/facebook.png"></a>
+                <div class="redes" aria-label="Redes sociales">
+                    <a aria-label="Instagram de Santa Ana Atelier" tabindex="16">
+                        <img class="red" src="imagenes/instagram.png" alt="Instagram">
+                    </a>
+                    <a aria-label="Facebook de Santa Ana Atelier" tabindex="17">
+                        <img class="red" src="imagenes/facebook.png" alt="Facebook">
+                    </a>
                 </div>
             </div>
         </form>
     </main>
     
-    <div class="filtro-background"></div>
+    <div class="filtro-background" aria-hidden="true"></div>
 
-    <footer>
+    <footer aria-label="Información del sitio">
 		<div id="información">
 			<div>
 				<h3>Ayuda</h3>
 				<ul>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="18">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="19">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="20">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="21">Lorem ipsum dolor sit amet consectetur</li>
 				</ul>
 			</div>
 			<div>
 				<h3>Contacto</h3>
 				<ul>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="22">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="23">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="24">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="25">Lorem ipsum dolor sit amet consectetur</li>
 				</ul>
 			</div>
 			<div>
 				<h3>Sobre nosotros</h3>
 				<ul>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="26">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="27">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="28">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="29">Lorem ipsum dolor sit amet consectetur</li>
 				</ul>
 			</div>
 			<div>
 				<h3>Redes sociales</h3>
 				<ul>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="30">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="31">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="32">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="33">Lorem ipsum dolor sit amet consectetur</li>
 				</ul>
 			</div>
 		</div>

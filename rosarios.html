@@ -8,43 +8,42 @@
 </head>
 <body>
 	<header>
-		<nav>
+		<nav aria-label="Navegación principal">
 			<div id="logo">
-				<a href="index.html"><img id="logotipo" src="imagenes/logo.png"></a>
+				<a href="index.html" aria-label="Ir a la página principal" accesskey="1" tabindex="1">
+					<img id="logotipo" src="imagenes/logo.png" alt="Logotipo de Santa Ana Atelier">
+				</a>
 			</div>
-			<div id="options">
-				<!-- <a href="index.html">Inicio</a> -->
-				<a>Nuevo</a>
-				<a>Rosarios</a>
-				<a>Pulseras</a>
-				<a>Escapularios</a>
+			<div id="options" aria-label="Categorías de productos">
+				<a aria-label="Ver productos nuevos" accesskey="2" tabindex="2">Nuevo</a>
+				<a aria-label="Ver rosarios" accesskey="3" tabindex="3">Rosarios</a>
+				<a aria-label="Ver pulseras" accesskey="4" tabindex="4">Pulseras</a>
+				<a aria-label="Ver escapularios" accesskey="5" tabindex="5">Escapularios</a>
 			</div>
-			<div id="log">
-				<img src="imagenes/buscar.png">
-				<a href="contacto.html"><img src="imagenes/contacto.png"></a>
-				<a href="login.html"><img src="imagenes/perfil.png"></a>
+			<div id="log" aria-label="Opciones de usuario">
+				<img src="imagenes/buscar.png" alt="Icono de búsqueda" aria-hidden="true">
+				<a href="contacto.html" aria-label="Ir a la página de contacto" accesskey="6" tabindex="6">
+					<img src="imagenes/contacto.png" alt="Contacto">
+				</a>
+				<a href="login.html" aria-label="Ir a la página de inicio de sesión" accesskey="7" tabindex="7">
+					<img src="imagenes/perfil.png" alt="Perfil de usuario">
+				</a>
 			</div>
 		</nav>
 	</header>
 	<main>
-		<!-- <section>
-			<img id="banner" src="imagenes/BannerRosario.jpg">
-		</section> -->
-        <div class="busqueda">
-			<p>Resultados:</p>
-            
+        <div class="busqueda" role="search" aria-label="Resultados de búsqueda">
+			<p aria-live="polite">Resultados:</p>
 			<div class="busqueda-input">
-				<input type="text" placeholder="Buscar...">
-				<img src="imagenes/buscar.png" class="icono">
+				<input type="text" placeholder="Buscar..." aria-label="Cuadro de búsqueda" accesskey="b" tabindex="8">
+				<img src="imagenes/buscar.png" class="icono" alt="Buscar" role="button" tabindex="9" aria-label="Ejecutar búsqueda">
 			</div>
-			
-                
         </div>
-		<section id="rosarios">
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+		<section id="rosarios" aria-label="Listado de rosarios">
+			<article tabindex="10">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
@@ -52,176 +51,174 @@
 				</a>
 			</article>
 
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="11">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="12">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="13">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="14">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="15">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="16">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="17">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="18">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="19">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="20">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-			<article>
-				<img class="favorito" src="imagenes/fav.png"> 
-				<a href="detalles.html">
-					<img src="imagenes/r1.png">
+			<article tabindex="21">
+				<img class="favorito" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+				<a href="detalles.html" aria-label="Ver detalles del rosario">
+					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal">
 					<div>
 						<h4>Rosario</h4>
 						<p>13,13 €</p>
 					</div>
 				</a>
 			</article>
-            
-			
 		</section>
 	</main>
-	<aside>
+	<aside aria-label="Filtros de productos">
 		<div class="titulo-filtros">
-            <img id="iconoFiltros" src="imagenes/filters.png">
+            <img id="iconoFiltros" src="imagenes/filters.png" alt="Icono de filtros">
             Filtros
         </div>
-		<div class="filtro-seccion">
-			<a>Madera</a>
-			<a>Metal</a>
-			<a>Plástico</a>
-			<a>Collares</a>
-			<a>Pulseras</a>
-			<a>Escapularios</a>
-			<a>Niño</a>
-			<a>Adulto</a>
+		<div class="filtro-seccion" aria-label="Opciones de filtro">
+			<a aria-label="Filtrar por madera" tabindex="22">Madera</a>
+			<a aria-label="Filtrar por metal" tabindex="23">Metal</a>
+			<a aria-label="Filtrar por plástico" tabindex="24">Plástico</a>
+			<a aria-label="Filtrar por collares" tabindex="25">Collares</a>
+			<a aria-label="Filtrar por pulseras" tabindex="26">Pulseras</a>
+			<a aria-label="Filtrar por escapularios" tabindex="27">Escapularios</a>
+			<a aria-label="Filtrar para niño" tabindex="28">Niño</a>
+			<a aria-label="Filtrar para adulto" tabindex="29">Adulto</a>
 		</div>
 		<div class="cantidad">
-			<label for="rango">Presupuesto max €</label>
-			<input type="range" id="rango">
+			<label for="rango">Presupuesto máximo en euros</label>
+			<input type="range" id="rango" aria-label="Seleccionar presupuesto máximo">
 		</div>
 	</aside>
-	<footer>
+	<footer aria-label="Pie de página">
 		<div id="información">
 			<div>
 				<h3>Ayuda</h3>
 				<ul>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="30">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="31">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="32">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="33">Lorem ipsum dolor sit amet consectetur</li>
 				</ul>
 			</div>
 			<div>
 				<h3>Contacto</h3>
 				<ul>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="34">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="35">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="36">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="37">Lorem ipsum dolor sit amet consectetur</li>
 				</ul>
 			</div>
 			<div>
 				<h3>Sobre nosotros</h3>
 				<ul>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="38">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="39">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="40">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="41">Lorem ipsum dolor sit amet consectetur</li>
 				</ul>
 			</div>
 			<div>
 				<h3>Redes sociales</h3>
 				<ul>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
-					<li>Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="42">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="43">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="44">Lorem ipsum dolor sit amet consectetur</li>
+					<li tabindex="45">Lorem ipsum dolor sit amet consectetur</li>
 				</ul>
 			</div>
 		</div>
@@ -229,8 +226,6 @@
 			<h1>Santa Ana Atelier</h1>
 			<p>Marca registrada</p>
 		</div>
-		
 	</footer>
-	
 </body>
 </html>
